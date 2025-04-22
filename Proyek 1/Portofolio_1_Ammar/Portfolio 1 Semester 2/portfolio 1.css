@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --purple-color: purple;
+    --palevioletred-color: palevioletred;
+}
+
+*,
+*::after,
+
+now make a css code for the another contacts part
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: floralwhite;
+    overflow-y: visible;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+*::selection {
+    background-color: var(--purple-color);
+    color: rgb(245, 245, 245);
+}
+
+* {
+    text-decoration: none;
+    color: purple;
+    list-style: none;
+}
+
+header {
+    padding: 1em 0;
+    background: rgb(242, 240, 240);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 1px 9px #888888;
+    -webkit-box-shadow: 0 1px 9px #888888;
+    -moz-box-shadow: 0 1px 9px #888888;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgb(242, 240, 240);
+    border-top: 2px solid rgb(140, 140, 140);
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: opacity 350ms ease-in-out, transform 450ms ease-in-out;
+}
+
+/* Toggle navbar */
+.navbar ul, .navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.navbar li {
+    margin: 0 1em;
+    text-align: center;
+}
+
+.navbar a {
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 0 0.2em 0;
+    transition: 350ms ease-in-out;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--palevioletred-color);
+    color: var(--palevioletred-color);
+}
+/* Home */
+
+.body {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.body_content {
+    max-width: 600px;
+}
+
+.body_content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+.body_content p {
+    font-size: 17px;
+    margin: 20px 0 40px;
+    color: black;
+}
+
+/* Home ends */
+
+
+/* About Section */
+.about-section {
+    background-color: #f8f8f8; 
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--purple-color);
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+.about-content:hover {
+    background-color: #fafafa;
+    transition: background-color 300ms ease-in-out;
+}
+
+@media screen and (min-width: 800px) {
+    .about-section {
+        padding: 80px 20%;
+    }
+
+    .about-content h3 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 20px;
+    }
+}
+
+/* About Ends */
+
+/* Contact Section */
+/* Updated Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.contact-section h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--purple-color);
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: var(--purple-color);
+    margin-bottom: 8px;
+    align-self: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 300ms ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--purple-color);
+    outline: none;
+}
+
+.contact-form button {
+    background-color: var(--purple-color);
+    color: white;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: var(--palevioletred-color);
+}
+
+/* Contact Cards */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 25px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--purple-color);
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.contact-card .contact-info {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.contact-card .contact-info span {
+    font-weight: bold;
+}
+
+.contact-card a {
+    color: var(--purple-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: var(--palevioletred-color);
+}
+
+.contact-card .contact-btn {
+    background-color: var(--purple-color);
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+}
+
+.contact-card .contact-btn:hover {
+    background-color: var(--palevioletred-color);
+}
+
+/* Responsive Design */
+@media screen and (min-width: 800px) {
+    .contact-section {
+        padding: 80px 20%;
+    }
+
+    .contact-card {
+        width: 350px;
+        padding: 30px;
+    }
+
+    .contact-card h4 {
+        font-size: 28px;
+    }
+
+    .contact-card p {
+        font-size: 18px;
+    }
+
+    .contact-card .contact-info {
+        font-size: 18px;
+    }
+
+    .contact-card .contact-btn {
+        font-size: 18px;
+    }
+}
+/* Contact ends */
+
+
+/* Banner */
+
+.banner-img {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); 
+    animation: fadeIn 2s ease-in-out;
+}
+
+.banner-text h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0.5em 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner-text p {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Banner ends */
+
+/* catalog */
+.catalog-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.catalog-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.catalog-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--purple-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.catalog-btn:hover {
+    background-color: var(--palevioletred-color);
+}
+/* catalog ends */
+
+/* Media queries */
+@media screen and (min-width: 800px) {
+    label {
+        display: none;
+    }
+
+    .navbar {
+        all: unset;
+    }
+
+    .navbar li {
+        display: inline;
+    }
+
+    .navbar li {
+        margin-left: 1em;
+    }
+
+    .navbar a {
+        position: relative;
+    }
+
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        top: 2.3em;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background: var(--palevioletred-color);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 350ms ease-in-out;
+        -webkit-transition: transform 350ms ease-in-out;
+    }
+
+    .navbar a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .navbar a:hover {
+        border-style: none;
+    }
+}
+
+/* For styling a letter */
+.text-letter {
+    margin-top: 2em;
+}
+
+.text-letter h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    transform: skew(-5deg, -5deg) rotate(5deg);
+    transform-origin: center center;
+    text-shadow: 
+        1px 1px 0 rgb(78, 0, 78),
+        2px 2px 0 rgb(78, 0, 78),
+        3px 3px 0 rgb(78, 0, 78),
+        4px 4px 0 rgb(78, 0, 78),
+        5px 5px 0 rgb(78, 0, 78),
+        6px 6px 0 rgb(78, 0, 78),
+        7px 7px 0 rgb(78, 0, 78),
+        8px 8px 0 rgb(53, 0, 53);
+}
+
+/* Responsive design for multiple contact cards */
+.contact-section .contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+    .contact-section {
+        padding: 80px 20%;
+    }
+
+    .another-contact-card h4 {
+        font-size: 28px;
+    }
+
+    .another-contact-card p {
+        font-size: 18px;
+    }
+
+    .another-contact-card .contact-info {
+        font-size: 18px;
+    }
+}
+
+/* Contact Cards Container */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Individual Contact Card Style */
+.contact-card {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Hover Effects for Contact Card */
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title in Contact Card */
+.contact-card h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--purple-color);
+    margin-bottom: 15px;
+}
+
+/* Description Text in Contact Card */
+.contact-card p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Contact Info Section */
+.contact-card .contact-info {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Bold Span in Contact Info */
+.contact-card .contact-info span {
+    font-weight: bold;
+}
+
+/* Link Styles in Contact Info */
+.contact-card a {
+    color: var(--purple-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Link Hover Effects */
+.contact-card a:hover {
+    color: var(--palevioletred-color);
+}
+
+/* Button Style */
+.contact-card .contact-btn {
+    background-color: var(--purple-color);
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Button Hover Effects */
+.contact-card .contact-btn:hover {
+    background-color: var(--palevioletred-color);
+}
+
+/* Media Query for Larger Screens */
+@media screen and (min-width: 800px) {
+    .contact-card {
+        width: 350px;
+        padding: 25px;
+    }
+
+    .contact-card h4 {
+        font-size: 28px;
+    }
+
+    .contact-card p {
+        font-size: 18px;
+    }
+
+    .contact-card .contact-info {
+        font-size: 18px;
+    }
+
+    .contact-card .contact-btn {
+        font-size: 18px;
+    }
+}
+
+/* category */
+.categories-section {
+    display: flex;
+    background-color: #f8f8f8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 50px 10%; 
+    text-align: center; 
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 1200px; 
+    width: 100%;
+}
+
+/* Individual Category Item */
+.category-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px; /* Fixed width for items */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background: floralwhite;
+    color: #333; 
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer .footer-left {
+    flex: 1;
+    font-size: 14px;
+    color: #666; 
+}
+
+.footer .footer-right {
+    flex: 1;
+}
+
+.footer .footer-right ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer .footer-right li {
+    font-size: 16px;
+}
+
+.footer .footer-right a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-right a:hover {
+    color: var(--palevioletred-color); 
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-left {
+        font-size: 12px;
+    }
+}
+
+
+
+/* Footer ends */

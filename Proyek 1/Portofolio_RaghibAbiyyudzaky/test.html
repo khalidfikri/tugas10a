@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historians</title>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="test2.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Historians</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="test.html">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Catalog">History</a></li>
+          <li><a href="#Media-Social">Social Media</a></li>
+          <li><a href="Anews.html">News</a></li>
+        </ul>
+      </nav>
+      <div class="burger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    <!-- Welcome -->
+    <section id="about" class="banner">
+      <div>
+        <h1>Welcome Historians!</h1>
+        <p>
+          "That men do not learn very much from the lessons of history is the
+          most important of all the lessons of history." - Aldous Huxley
+        </p>
+      </div>
+    </section>
+    <!-- Pop Up Section -->
+    <section id="popup" class="popup-container">
+      <div
+        class="popup-box"
+        style="
+          background-image: url(https://i0.wp.com/portvitoria.com/wp-content/uploads/2019/06/19_George-Santayana.jpg?resize=262%2C394&ssl=1);
+        "
+      >
+        <h5>
+          "Those who do not learn history are doomed to repeat it." — George
+          Santayana
+        </h5>
+      </div>
+      <div
+        class="popup-box"
+        style="
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7EBI2VQYR_degrujWd8K8OcJuEOyDfV6nWQ&s);
+        "
+      >
+        <h5>
+          "The more you know about the past, the better prepared you are for the
+          future." — Theodore Roosevelt
+        </h5>
+      </div>
+      <div
+        class="popup-box"
+        style="
+          background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/authors/1276069531i/969937._UX200_CR0,56,200,200_.jpg);
+        "
+      >
+        <h5>
+          "History is not a burden on the memory but an illumination of the
+          soul." — John Dalberg-Acton
+        </h5>
+      </div>
+    </section>
+    <!-- About Page -->
+    <section id="About" class="about-section">
+      <h2>About This Website</h2>
+      <div class="about-item">
+        <h3>Main Reason :</h3>
+        <p>
+          History is a mirror of human life, offering valuable lessons about
+          triumphs, mistakes, and the evolution of civilizations. Unfortunately,
+          many people see history as boring or irrelevant to modern life. In
+          reality, understanding history is essential for building a better
+          future.
+        </p>
+      </div>
+    </section>
+    <!-- Media Social -->
+    <section id="Media-Social" class="social-media-section">
+      <h2>Follow Our Social Media</h2>
+      <div class="cards-container">
+        <div class="card">
+          <a href="https://www.example.com/tikto">
+            <img src="threadscanva.png" alt="Threads" />
+            <h3>Threads</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              vehicula justo vel nulla.
+            </p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.instagram.com/neohistoria.id/">
+            <img src="Instagram.png" alt="Instagram" />
+            <h3>Instagram</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              vehicula justo vel nulla.
+            </p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.youtube.com/@HoH">
+            <img src="youtube.png" alt="YouTube" />
+            <h3>YouTube</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              vehicula justo vel nulla.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- List History -->
+    <section id="Catalog" class="catalog-section">
+      <h2>List History</h2>
+      <div class="catalog-container">
+        <div class="catalog-item">
+          <img src="WorldWar1.jpg" alt="Item 1" class="catalog-img" />
+          <h3>World War 1</h3>
+          <p>
+            World War 1 (1914–1918) was a major global conflict involving many
+            countries across Europe, the Middle East, Africa, and Asia. The war
+            was triggered by the assassination of Archduke Franz Ferdinand of
+            Austria on June 28, 1914.
+          </p>
+          <button class="catalog-btn">Read More!</button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="ww2.avif" alt="Item 2" class="catalog-img" />
+          <h3>World War 2</h3>
+          <p>
+            World War 2 (1939–1945) was the deadliest and most widespread
+            conflict in human history, involving over 70 countries across
+            Europe, Asia, Africa, and the Pacific. It was primarily fought
+            between two opposing military alliances: Allies and Axis.
+          </p>
+          <button class="catalog-btn">Read More!</button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="Crusade War.jpg" alt="Item 3" class="catalog-img" />
+          <h3>Crusade War</h3>
+          <p>
+            The Crusades were a series of religious wars between the 11th and
+            15th centuries, primarily initiated by European Christians against
+            Muslim forces in the Holy Land. The main goal was to reclaim
+            Jerusalem and other sacred territories from Muslim control.
+          </p>
+          <button class="catalog-btn">Read More!</button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="Cold War.jpg" alt="Item 4" class="catalog-img" />
+          <h3>Cold War</h3>
+          <p>
+            The Cold War (1947–1991) was a prolonged period of geopolitical
+            tension between the United States (USA) and the Soviet Union (USSR),
+            along with their respective allies in the Western and Eastern Blocs.
+            It was characterized by ideological, political, military, and
+            economic rivalry.
+          </p>
+          <button class="catalog-btn">Read More!</button>
+        </div>
+
+        <div class="catalog-item">
+          <img
+            src="Operation dessert Storm.jpg"
+            alt="Item 5"
+            class="catalog-img"
+          />
+          <h3>Operation Dessert Storm</h3>
+          <p>
+            Operation Desert Storm (January 17 – February 28, 1991) was the
+            combat phase of the Gulf War, launched by a U.S.-led coalition
+            against Iraq in response to its invasion of Kuwait. It was a
+            decisive military campaign aimed at liberating Kuwait and weakening
+            Iraqi military capabilities.
+          </p>
+          <button class="catalog-btn">Read More!</button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="Vietnam War.jpg" alt="Item 6" class="catalog-img" />
+          <h3>Vietnam War</h3>
+          <p>
+            The Vietnam War was a prolonged conflict between the communist North
+            Vietnam, supported by the Soviet Union and China, and South Vietnam,
+            backed primarily by the United States and its allies. It was part of
+            the larger Cold War struggle between communism and democracy.
+          </p>
+          <button class="catalog-btn">Read More!</button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="IndonesianHistory.jpg" alt="Item 7" class="catalog-img" />
+          <h3>Indonesian History</h3>
+          <p>
+            Indonesia, the world's largest archipelago, has a rich and diverse
+            history. It was shaped by indigenous kingdoms, colonial rule, and
+            struggles for independence. Over time, it transitioned from colonial
+            occupation to a modern democracy. Today, it remains a key economic
+            and political power in Southeast Asia.
+          </p>
+          <button class="catalog-btn">Read More!</button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="Australia History.avif" alt="Item 8" class="catalog-img" />
+          <h3>Australian History</h3>
+          <p>
+            Australia has a rich and diverse history, beginning with its
+            Indigenous peoples who have lived for over 60,000 years. British
+            colonization in 1788 led to significant changes, including conflict
+            and expansion. Over time, Australia evolved into an independent
+            nation and a modern democracy. Today, it is a multicultural society
+            with global influence.
+          </p>
+          <button class="catalog-btn">Read More!</button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="6daywar.jpg" alt="Item 9" class="catalog-img" />
+          <h3>6 Days War</h3>
+          <p>
+            The Six-Day War was a brief but decisive conflict fought between
+            Israel and the Arab states of Egypt, Jordan, and Syria from June 5
+            to June 10, 1967. It reshaped the Middle East and significantly
+            altered regional geopolitics. Israel achieved a swift victory,
+            gaining control of the Sinai Peninsula, Gaza Strip, West Bank, East
+            Jerusalem, and Golan Heights.
+          </p>
+          <button class="catalog-btn">Read More!</button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="reconquista.jpg" alt="Item 10" class="catalog-img" />
+          <h3>Reconquista</h3>
+          <p>
+            The Reconquista was a centuries-long series of battles in the
+            Iberian Peninsula, where Christian kingdoms fought to reclaim
+            territory from Muslim Moors who had ruled since 711 AD. It lasted
+            from 718 to 1492, shaping Spain and Portugal’s history. The conflict
+            ended with the conquest of Granada by Ferdinand and Isabella in
+            1492, unifying Spain under Catholic rule.
+          </p>
+          <button class="catalog-btn">
+            <a href="https://en.wikipedia.org/wiki/Reconquista">Read More!</a>
+          </button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="FrenchRevolutionary.jpg" alt="Item 9" class="catalog-img" />
+          <h3>French Revolutionary</h3>
+          <p>
+            The French Revolution (1789–1799) was a period of political and
+            social upheaval that led to the overthrow of the monarchy and the
+            rise of democracy in France. Driven by economic hardship, social
+            inequality, and Enlightenment ideas, it saw key events like the
+            Storming of the Bastille and the Reign of Terror, and the revolution
+            ended with Napoleon Bonaparte's rise to power in 1799.
+          </p>
+          <button class="catalog-btn">
+            <a href="https://en.wikipedia.org/wiki/French_Revolutionary_Wars"
+              >Read More!</a
+            >
+          </button>
+        </div>
+
+        <div class="catalog-item">
+          <img src="Napoleonic.jpg" alt="Item 10" class="catalog-img" />
+          <h3>Napoleonic War</h3>
+          <p>
+            The Napoleonic Wars (1803–1815) were a series of conflicts between
+            Napoleon’s French Empire and various European coalitions. Napoleon
+            achieved major victories, expanding French rule, but faced setbacks
+            in the Peninsular War (1808–1814) and the disastrous Russian
+            Campaign (1812). He was defeated at Leipzig (1813), finally lost at
+            Waterloo (1815).
+          </p>
+          <button class="catalog-btn">
+            <a href="https://en.wikipedia.org/wiki/Napoleonic_Wars"
+              >Read More!</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact" class="contact-section">
+      <div class="contact-content">
+        <h3>Contact Us</h3>
+        <p>
+          If you have any questions, feel free to reach out to us through the
+          form below or via email.
+        </p>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">FAQ</a>
+          <a href="https://www.instagram.com/abydzkyy._/">Instagram</a>
+        </div>
+        <p>&copy; 2025 Your Website. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

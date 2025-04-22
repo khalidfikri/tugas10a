@@ -1,0 +1,58 @@
+* {
+    font-family: sans-serif;
+   
+}
+
+
+
+
+.biodata {
+    width: 30%;
+    margin: 120px;
+    margin-left: 20%;
+    display: flex;
+    
+
+}
+
+.text {
+    position: absolute;
+    width: 30%;
+    margin-left: 30%;
+}
+
+.gambar {
+    margin-left: 8%
+}
+
+
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: larger;
+    margin: 10px;
+}
+
+nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.sosmed {
+    justify-content: space-between
+}
+
+ul {
+    display: flex;
+    gap: 10%;
+    margin-left: 13%;
+    margin-top: 170%;
+
+}
+
+
+

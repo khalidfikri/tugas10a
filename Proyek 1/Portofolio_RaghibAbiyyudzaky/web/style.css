@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  transition: top 0.5s ease-in-out; /* Animasi lebih halus */
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #111;
+}
+
+.content {
+  padding: 16px;
+  margin-top: 50px;
+}
+
+/* Class untuk menyembunyikan navbar */
+.navbar-hidden {
+  top: -60px !important; /* Sesuaikan dengan tinggi navbar */
+}

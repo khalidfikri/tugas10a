@@ -1,0 +1,99 @@
+*{font-family:"lexend";}
+*,html{
+    padding: 0px;
+    margin: 0px;
+    font-family: "lexend";
+}
+body{background-color:#F1F1F1;}
+nav{background-color: #21209C; text-decoration: none;
+    display: flex; justify-content: space-between;}
+nav ul{display: flex; justify-content: space-between; gap: 1rem; margin-top: 20px; margin-right: 20px;}
+nav ul li{list-style:none;} 
+nav ul li a{
+    text-decoration: none; color: #F1F1F1; font-weight: 400; align-items: center;
+    justify-content: space-between; 
+}
+nav ul li a:hover{color: #FDB827;}
+.banner img{width: 100% ; height:50% ;}
+.banner p{ position: absolute;
+top: 30%; font-weight: 800; font-size: 150px; color:#F8F6F6; padding-left:370px ; }
+.banner .logo{position: absolute; top:30%; padding-left:400px; width: 550px; height: 200px;}
+
+/*css ini milik catalog*/
+.container{ 
+    display: flex;
+    gap: 40px;
+    margin-bottom:50px;
+}
+.card{
+    width: 292px;
+    margin-top: 10px;
+    height: 620px;
+    background-color:#f1f1f100;
+    border: solid #f1f1f100 5px;
+    border-radius:5px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column; gap:2%; align-items: center;
+    transition: all 0.2s;}
+    .judul{width: 250px; height: 250px; position: absolute; padding-top: 250px;  padding-left: 70px;}
+
+        
+          .card:hover {
+            transform: translateY(-15px);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;}
+.card img {
+        object-fit: fill;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+    }
+.content{
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+        }
+
+.title{
+    
+        font-size: 40px;
+        color: black;}
+.catalog-title h1{color: #FDB827; font-size: 50px; margin-top: 20px; text-align: center;}
+
+            .random-text{
+                color: #2A363B;
+            }
+             .isi {padding-left: 200px; width: 500px; margin-top: 30px; font-size: 30px; position: absolute;}
+             .isi h1{color: #FDB827;}
+             .gambar-about{width: 100%; height: 500px;}
+
+             
+
+             .banner3 img{
+                width: 100%;
+                height: 50%;
+             }
+             .banner3 .logo1{position: absolute; width: 500px; height: 500px; padding-left: 455px; padding-top: 50px;}
+.box{position: absolute; background-color: #00000091;color: #F1F1F1; margin-left: 20px; margin-top: 200px;
+width: 400px; padding-left: 20px; height: 300px;}
+.box h1 b{padding-left: 80px;}
+.box p{font-size: 20px;}
+.box1{position: absolute; background-color: #00000091;color: #F1F1F1; margin-left: 900px; margin-top: 200px;
+    width: 400px; padding-left: 20px; height: 300px; }
+    .box1 h1 {padding-top: 20px; padding-bottom: 20px;}
+    .hm1 img{width: 100%;}
+    .hm1 div{position: absolute; font-size:35px; padding-left: 200px; width: 500px; padding-top: 40px;}
+    .hm1 h1{color: #21209C;}
+    .bg-contact{width: 100%; height: 500px;}
+    .cntc img{position: absolute; padding-left: 445px;margin-bottom: 20px;}
+    .cntc h1{position: absolute; padding-left: 555px; margin-top: 30px; text-align: center;}
+    .cntc h2{position: absolute; padding-left: 555px; margin-top: 430px; text-align: center;}
+  
+    .footer-img img{width: 40px;}
+    .footer-img{margin-left: 610px;}
